@@ -1,0 +1,267 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #afb1b8;
+  --social-icon-color: rgba(255, 255, 255, 0.1);
+  --third-bg-color: rgba(47, 48, 58, 0.8);
+  --button-bg-color: #f5f4fa;
+  --border-portfolio-card: #eeeeee;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+}
+
+/* временное свойство */
+.link.current {
+  border-bottom: 4px solid var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* хэдер */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 107px;
+
+  color: var(--title-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo .logo-primary {
+  color: var(--accent-color);
+}
+
+/* .logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+} */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 52px;
+}
+
+.site-nav,
+.site-address {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-address {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-address a {
+  color: var(--primary-text-color);
+}
+
+.site-address .address-item:not(:last-child) {
+  margin-right: 51px;
+}
+
+.site-address a:hover,
+.site-address a:focus {
+  color: var(--accent-color);
+}
+
+/* футер */
+
+/* временный фон */
+footer {
+  background-color: #2f303a;
+}
+
+.container.flex-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo.inverse {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 0;
+
+  color: var(--primary-white-color);
+}
+
+.footer-address {
+  color: var(--primary-white-color);
+
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer-address .address.color-white {
+  color: var(--primary-white-color);
+}
+
+.footer-address .address.link {
+  display: flex;
+  flex-direction: column;
+}
+
+.address:not(:last-child) {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.address {
+  color: var(--primary-text-color);
+}
+
+.address.link:hover,
+.address.link:focus {
+  color: var(--accent-color);
+}
+
+.join-container > .join {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.socials-list {
+  display: flex;
+}
+
+.socials-list > .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials-list .social-icon {
+  color: var(--primary-white-color);
+  background-color: var(--social-icon-color);
+
+  /* временные свойства */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.socials-list .social-icon:hover,
+.socials-list .social-icon:focus {
+  color: var(--accent-color);
+}
+
+.auth-container .auth {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.button {
+  border: 0;
+  border-radius: 4px;
+  min-width: 109px;
+  padding: 10px 62px 10px 29px;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: left;
+  cursor: pointer;
+}
